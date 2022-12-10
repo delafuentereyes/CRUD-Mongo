@@ -1,10 +1,10 @@
 ﻿using MongoDB.Driver;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
-using MongoBackend.Models;
+using CRUD_Mongo.Models;
 using System.Text.Json.Nodes;
 
-namespace MongoBackend.DatabaseHelper
+namespace CRUD_Mongo.DatabaseHelper
 {
     public class Database
     {

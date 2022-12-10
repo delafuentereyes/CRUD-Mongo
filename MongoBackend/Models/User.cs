@@ -1,6 +1,6 @@
 ﻿using MongoDB.Bson;
 
-namespace MongoBackend.Models
+namespace CRUD_Mongo.Models
 {
     public class User
     {   

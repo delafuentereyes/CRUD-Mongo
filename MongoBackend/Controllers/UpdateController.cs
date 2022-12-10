@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MongoBackend.Models;
+using CRUD_Mongo.Models;
 using MongoDB.Bson;
 using System.Diagnostics;
 
-namespace MongoBackend.Controllers
+namespace CRUD_Mongo.Controllers
 {
     public class UpdateController : Controller
     {
