@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col"> Name </th>
+            <th scope="col"> Email </th>
+            <th scope="col"> Phone </th>
+            <th scope="col"> Address </th>
+            <th scope="col"> Date In </th>
+            <th scope="col"> Action </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var @item in ViewBag.UserList)
+        {
+            <tr>
+                <td> @item.name </td>
+                <td> @item.email </td>
+                <td> @item.phone </td>
+                <td> @item.address </td>
+                <td> @item.dateIn </td>
+                <td> 
+                    <form asp-action="updateUser" asp-controller="Update" method="POST">
+                        <button type="button" class="btn btn-primary"> Update </button>
+                    </form>
+                    <form asp-action="deleteUser" asp-controller="Delete" method="POST">
+                        <button type="button" class="btn btn-danger"> Delete </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
