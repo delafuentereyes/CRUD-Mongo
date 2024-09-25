@@ -10,7 +10,7 @@ namespace CRUD_Mongo.DatabaseHelper
     {
         public List<User> getUsers()
         {
-            MongoClient mongoClient = new MongoClient("mongodb+srv://jesusdelafuente:TitoyMia17@basesdedatos2.qj80is6.mongodb.net/test");
+            MongoClient mongoClient = new MongoClient("mongodb+srv://user:pass@basesdedatos2.qj80is6.mongodb.net/test");
 
             IMongoDatabase db = mongoClient.GetDatabase("MongoBD2");
 
